@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title> Nada webpage </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="style" href="C:\Users\TOSHIBA\Desktop\cssnada.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          h1 {
+            color: rgb(255, 145, 0);
+            font: sans-serif;
+          }
+          p {
+            color: rgb(35, 37, 36);
+           }
+         #navbar{
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #333;}
+
+         #navbar>li { float: left;}
+
+         li a {
+           display: block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;}
+
+           #navbar>li a:hover:not(.active) {
+         background-color: rgb(100, 95, 95);
+         color: white;
+         text-decoration:none;}
+          
+         .active {
+         background-color: rgb(29, 87, 31);
+         color: white;
+         text-decoration:none;
+         
+           }
+
+         .flex-container {
+           display: flex;
+           background-color: rgb(174, 175, 131);
+           justify-content: space-around;}
+
+         .flex-container > div {
+           background-color: #3b754fe7;
+            margin: 15px;
+           padding: 20px;
+           font-size: 15px;
+           text-align: center;
+          }
+         .flex-container p {color:blanchedalmond}
+
+         .flex-container2 {
+          display: flex;
+           background-color: rgb(174, 175, 131);
+           justify-content: space-around;}  
+        
+
+         .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+          }
+
+          .grid-item {
+           background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 15px;
+            text-align: center;
+           }
+           footer {background-color: green;
+          color: honeydew;
+        padding: 20px;}
+
+       
+          @media (max-width: 400px) {
+         .navbar {
+          display: none;
+          flex-wrap: wrap;
+          justify-content:center;}
+          .flex-container > div {
+           background-color: #3b754fe7;}
+          }
+
+        </style>
+    </head>
+    <body>
+        <a name="Home"></a>
+        
+        <ul id="navbar" >
+           <li> <a class="active"href="#Home"> Home </a></li>
+            <li><a href="#about me"> About me </a></li>
+            <li><a href="#My skills">My skills</a></li>
+            <li><a href="#Resume">Resume</a></li>
+           <li> <a href="#Contact me">Contact me</a></li>
+        </ul>
+        <br><br><br>
+        <div class="bordered">
+              <a name="About me"></a>
+             <h1> <b> Nada MOUSSA </b> </h1>
+             <h3> About me </h3>
+             <div class="flex-container">
+              <div><p><b> This is my first webpage, i'm a fullstack developer</b> </p> </div>
+              <div><p>  A full stack developer is a web developer who works
+                  with both the front and back ends of a website or application—meaning they
+                  can tackle projects that involve databases, building user-facing websites,
+                  or even work with clients during the planning phase of projects. 
+                 </p></div>
+               
+            </div>              
+        
+        </div>
+
+        <h3> My skills :</h3>
+       
+         <div class="flex-container2">
+           <a name="My skills"></a>
+          <!--dis bullets-->
+          <ul type= "disc" > 
+            <li> HTML </li>
+            <li> CSS </li>
+            <li>Java script </li>  
+          </ul>
+        
+         <img src="https://www.softfluent.fr/wp-content/uploads/2019/10/html5.png"
+           alt="html" style="width:100px; height: 120;"   >
+
+         <audio controls>
+           <source src="C:\Users\Public\Music\Sample Music\Sleep Away.mp3" type="audio/mpeg">
+            Please Check the audio Extension
+         </audio> <br> <br> 
+        </div>
+        <section>
+            <a name="resume"></a>
+          <h3> Resume: </h3>
+          <div class="grid-container">
+            <div class="grid-item">About me: Fullstack developer</div>
+            <div class="grid-item">My skills: HTML CSS JS</div>
+             
+           
+          
+       </section>
+
+        <br> <br>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/Lf3AwLzmqQw" ></iframe>
+        <br>
+         
+        <section>
+            <a name="Contact me"> </a>
+          <h3> Contact me : </h3>
+            <form>
+                <label> Name: </label>
+                <input type="text" name="first name" placeholder="Type your name here"/>
+                <br> <br>
+                <label> Number: </label>
+                <input type="number" name="number" value="23789456"/>
+                <br/> <br/> 
+                <label>Birth Date: </label>
+                <input type="date" name="Birthday" />
+                <br> <br>
+                <label> Password:</label>
+                <input type="password" name="password"/>
+                <br> <br>
+                <input type="submit" value="submit"/>
+                
+            </form>
+
+       </section>
+            <br><br>
+            <nav>
+                <a href="https://html.com/"> HTML </a>
+                <a href="https://www.w3schools.com/"> w3schools</a>
+                <a href="https://www.javascript.com/"> JavaScripy </a>
+                </nav>
+                <br> <br>
+                <hr>
+           
+            <footer>
+                my contact: nada.moussa@gmail.com
+            </footer>
+    
+            
+        
+            
+        </body>
+    </html>
+
